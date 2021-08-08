@@ -265,7 +265,7 @@ a {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    color: rgba(231, 231, 231, 0.588235); }
+    color: #707070; }
 
 body {
   font-family: "Roboto", sans-serif, "Noto Sans", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -351,7 +351,7 @@ header {
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
-        color: rgba(231, 231, 231, 0.588235); }
+        color: #707070; }
 
 footer {
   background: #aa0601;
@@ -370,7 +370,7 @@ footer {
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s;
-      color: rgba(231, 231, 231, 0.588235); }
+      color: #707070; }
   footer .nav__menu li:first-child a {
     padding: 5px 24px 5px 0px; }
     @media (max-width: 998px) {
@@ -425,7 +425,7 @@ footer {
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
-        color: rgba(231, 231, 231, 0.588235); }
+        color: #707070; }
     footer .address a[href^="mailto"]::before {
       height: 36px;
       width: 36px;
@@ -494,7 +494,7 @@ footer {
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
-        color: rgba(231, 231, 231, 0.588235); }
+        color: #707070; }
 
 main .banner {
   height: 840px;
@@ -813,6 +813,11 @@ main .contact {
   font-weight: bold;
   text-decoration: none;
   text-align: center; }
+  .product__item:hover {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #aa0601; }
   @media (max-width: 998px) {
     .product__item {
       font-size: 24px;
@@ -931,6 +936,12 @@ main .contact {
     .product__serial__item a {
       display: block;
       text-decoration: none; }
+      .product__serial__item a:hover {
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.05);
+                box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.05); }
     .product__serial__item img {
       width: 100%;
       height: 164px;
@@ -1193,6 +1204,11 @@ main .contact {
     color: #fff;
     text-decoration: none;
     display: block; }
+  .location .card__footer:hover {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #333333; }
   @media (max-width: 998px) {
     .location .card__footer {
       font-size: 14px;
@@ -1419,6 +1435,11 @@ main .contact {
     display: block;
     text-align: right;
     font-weight: 900; }
+    .blog__item .card__footer:hover {
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      color: #aa0601; }
     @media (max-width: 998px) {
       .blog__item .card__footer {
         color: #555555;
