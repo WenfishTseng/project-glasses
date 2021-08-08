@@ -121,12 +121,6 @@
         @include desktop {
           font-size: 14px;
           line-height: 21px;
-          // overflow: hidden;
-          // text-overflow: string;
-          // content: "more";
-          // display: -webkit-box;
-          // -webkit-box-orient: vertical;
-          // -webkit-line-clamp: 6;
         }
         @include mobile {
           display: none;
@@ -140,6 +134,10 @@
         display: block;
         text-align: right;
         font-weight: 900;
+        &:hover {
+          transition: all 0.5s;
+          color: darken($color: $primary, $amount: 0);
+        }
         @include desktop {
           color: #555555;
           font-size: 14px;

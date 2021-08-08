@@ -32,7 +32,7 @@
 
 @mixin link-hover {
   transition: all 0.5s;
-  color: darken($color: #e7e7e796, $amount: 0);
+  color: darken($color: $light, $amount: 0);
 }
 
 @mixin bg-img-cover {

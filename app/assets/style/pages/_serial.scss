@@ -18,6 +18,10 @@
     font-weight: bold;
     text-decoration: none;
     text-align: center;
+    &:hover {
+      transition: all 0.5s;
+      color: darken($color: $primary, $amount: 0);
+    }
     @include desktop {
       font-size: 24px;
       padding: 14px 0px;
@@ -136,6 +140,7 @@
       width: 25%;
       padding: 0px 15px;
       margin-bottom: 104px;
+
       &-sun {
         width: 33%;
       }
@@ -152,6 +157,11 @@
       a {
         display: block;
         text-decoration: none;
+        &:hover {
+          transition: all 0.5s;
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05),
+            0 5px 5px rgba(0, 0, 0, 0.05);
+        }
       }
 
       img {
