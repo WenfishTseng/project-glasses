@@ -1,0 +1,466 @@
+.navbar {
+  background: $secondary;
+  @include mobile {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    display: block;
+    text-decoration: none;
+    color: $white;
+    font-weight: bold;
+    padding: 12px 24px;
+    @include desktop {
+      padding: 16px;
+    }
+  }
+  li:first-child a {
+    padding: 12px 24px 12px 0px;
+    @include desktop {
+      padding: 16px 16px 16px 0px;
+    }
+  }
+  &__search {
+    @include hide-text;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+.blog {
+  &__title {
+    font-size: 48px;
+    line-height: 80px;
+    font-weight: bold;
+    padding-left: 16px;
+    border-left: 8px solid $primary;
+    margin: 40px 0px 60px;
+    @include desktop {
+      border-left: 4px solid $primary;
+      margin: 32px 0px 40px;
+    }
+    @include mobile {
+      font-size: 28px;
+      padding-left: 8px;
+      margin: 28px 0px 28px;
+    }
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 60px;
+    @include desktop {
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__img {
+      width: 58.3%;
+      height: auto;
+      object-fit: cover;
+      margin-right: 30px;
+      @include desktop {
+        width: 50%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .card {
+      &__title {
+        color: $primary;
+        font-size: 32px;
+        line-height: 63px;
+        @include desktop {
+          font-size: 20px;
+          line-height: 29px;
+        }
+      }
+      &__subLine {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        @include desktop {
+          margin-bottom: 32px;
+        }
+        @include mobile {
+          margin-bottom: 0px;
+        }
+        &__subTitle {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+          @include desktop {
+            font-size: 16px;
+          }
+        }
+        &__time {
+          font-size: 16px;
+          line-height: 24px;
+          @include desktop {
+            font-size: 14px;
+          }
+        }
+      }
+      &__body {
+        font-size: 20px;
+        line-height: 30px;
+        color: #555555;
+        margin-bottom: 14px;
+        @include desktop {
+          font-size: 14px;
+          line-height: 21px;
+          // overflow: hidden;
+          // text-overflow: string;
+          // content: "more";
+          // display: -webkit-box;
+          // -webkit-box-orient: vertical;
+          // -webkit-line-clamp: 6;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+      &__footer {
+        color: $secondary;
+        text-decoration: none;
+        font-size: 36px;
+        line-height: 54px;
+        display: block;
+        text-align: right;
+        font-weight: 900;
+        @include desktop {
+          color: #555555;
+          font-size: 14px;
+          line-height: 21px;
+          display: inline;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+    @include desktop {
+      margin-bottom: 96px;
+    }
+    @include mobile {
+      margin-bottom: 56px;
+    }
+    a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: $page-line;
+      font-size: 18px;
+      line-height: 27px;
+      border: 1px solid $page-line;
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 15px;
+      }
+
+      &:hover {
+        background: $page-hover;
+      }
+    }
+    .active a {
+      background: $black;
+      color: $white;
+    }
+    li {
+      &:first-child a,
+      &:last-child a {
+        padding: 11px 12px;
+        font-size: 19px;
+        line-height: 29px;
+        @include mobile {
+          font-size: 17px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+.blogContent {
+  &__section {
+    display: flex;
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__article {
+    width: 75%;
+    padding-right: 30px;
+    @include mobile {
+      width: 100%;
+      padding-right: 0px;
+    }
+  }
+
+  &__tagBox {
+    width: 25%;
+    @include mobile {
+      width: 100%;
+      margin-bottom: 56px;
+    }
+
+    &__title {
+      color: $primary;
+      font-size: 28px;
+      line-height: 42px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      @include desktop {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      &::before {
+        width: 48px;
+        height: 48px;
+        margin-right: 8px;
+        display: inline-block;
+        content: " ";
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week4/icon-tag.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include desktop {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    li {
+      display: inline;
+    }
+
+    &__item {
+      font-size: 24px;
+      line-height: 36px;
+      color: $primary;
+      font-weight: bold;
+      padding-right: 24px;
+      text-decoration: none;
+      @include desktop {
+        font-size: 16px;
+        line-height: 21px;
+        padding-right: 16px;
+      }
+    }
+  }
+
+  &__branch {
+    margin-top: 16px;
+    @include mobile {
+      margin-top: 8px;
+    }
+    &__item {
+      color: $black;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      font-weight: 400;
+      @include desktop {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      @include mobile {
+        line-height: 21px;
+      }
+      &-active {
+        color: $primary;
+      }
+    }
+  }
+
+  &__tag {
+    li {
+      display: inline;
+    }
+    &__item {
+      text-decoration: none;
+      color: $primary;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: bold;
+      @include desktop {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 70px;
+    margin-bottom: 8px;
+    @include desktop {
+      font-size: 32px;
+      line-height: 46px;
+    }
+  }
+
+  &__subLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    &__subTitle {
+      font-size: 28px;
+      line-height: 42px;
+      font-weight: 400;
+      @include desktop {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+    &__time {
+      font-size: 16px;
+      line-height: 24px;
+      color: #6c6c6c;
+      font-weight: 400;
+      @include desktop {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #0a0a0ab0;
+    margin: 24px 0px 40px;
+    @include desktop {
+      margin: 16px 0px 24px;
+    }
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__share {
+    margin-bottom: 12px;
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: bold;
+      margin-right: 20px;
+      @include desktop {
+        margin-right: 16px;
+      }
+    }
+    &__item {
+      margin-right: 16px;
+    }
+  }
+
+  &__changePage {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    @include desktop {
+      margin-bottom: 96px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    &__item {
+      width: 50%;
+      text-decoration: none;
+      font-size: 19px;
+      line-height: 30px;
+      color: $black;
+      display: flex;
+      align-items: center;
+      @include desktop {
+        font-size: 16px;
+      }
+      @include mobile {
+        width: 100%;
+      }
+
+      &-back {
+        &::before {
+          width: 24px;
+          height: 24px;
+          display: inline-block;
+          content: " ";
+          background-image: url("../images/arrow_back_black_24dp.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          @include desktop {
+            width: 20px;
+            height: 20px;
+          }
+          @include mobile {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      &-next {
+        justify-content: flex-end;
+        @include mobile {
+          justify-content: flex-start;
+        }
+        &::after {
+          width: 24px;
+          height: 24px;
+          display: inline-block;
+          content: " ";
+          background-image: url("../images/arrow_forward_black_24dp.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          @include desktop {
+            width: 20px;
+            height: 20px;
+          }
+          @include mobile {
+            display: none;
+          }
+        }
+        &::before {
+          @include mobile {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            content: " ";
+            background-image: url("../images/arrow_forward_black_24dp.svg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// color
+$primary: #aa0601;
+$secondary: #650300;
+$success: #aa06010d;
+$light: #707070;
+$dark: #212529;
+$brown: #5f3e2d;
+$orange: #b75929;
+$white: #fff;
+$black: #000;
+$page-line: #555555;
+$page-hover: #f2f2f2;
+
+// font size
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875; // 14px
+$font-size-lg: $font-size-base * 1.125; // 18px
+$font-size-xl: $font-size-base * 1.25; // 20px
+$font-size-2xl: $font-size-base * 1.5; // 24px
+$font-size-3xl: $font-size-base * 2; // 32px
+$font-size-4xl: $font-size-base * 2.25; // 36px
+$font-size-5xl: $font-size-base * 3; // 48px
+$font-size-6xl: $font-size-base * 4.5; // 48px
+
+$h1-font-size: $font-size-base * 4; // 64px
+$h2-font-size: $font-size-base * 1.875; // 30px
+$h3-font-size: $font-size-base * 1.75; // 28px
+
+// line height
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-m: 1.875;
+$line-height-lg: 2;
+
+// font weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$en-font-family: "Roboto", sans-serif;
+$tc-font-family: "Noto Sans", sans-serif;
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

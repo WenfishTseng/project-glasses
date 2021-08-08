@@ -1,0 +1,54 @@
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    @include link-hover;
+  }
+}
+
+body {
+  font-family: $en-font-family, $tc-font-family, $font-family-sans-serif;
+  line-height: $line-height-base;
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px;
+
+    @include desktop {
+      max-width: 720px; /* 690 + 30 */
+    }
+    @include mobile {
+      max-width: 375px; /* 345 + 30 */
+    }
+  }
+  .title {
+    font-size: $font-size-5xl;
+    font-weight: $font-weight-bold;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    @include desktop {
+      padding-top: 40px;
+      padding-bottom: 32px;
+      font-size: $font-size-3xl;
+    }
+    @include mobile {
+      font-size: $font-size-2xl;
+      line-height: $line-height-lg;
+      padding-top: 32px;
+      padding-bottom: 20px;
+    }
+  }
+}

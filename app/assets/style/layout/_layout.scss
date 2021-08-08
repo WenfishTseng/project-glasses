@@ -1,0 +1,219 @@
+header {
+  background: $primary;
+  .header {
+    padding: 0px 56px;
+    @include desktop {
+      padding: 0px 19px;
+    }
+    @include mobile {
+      padding: 0px;
+    }
+
+    &__logo {
+      width: 80px;
+      height: 49px;
+      margin: 30px 32px;
+      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+      @include bg-img-cover;
+      @include hide-text;
+      @include desktop {
+        margin: 30px 0px 30px 20px;
+      }
+      @include mobile {
+        width: 48px;
+        height: 30px;
+        margin: 10px 0px;
+      }
+    }
+
+    &__menu {
+      @include mobile {
+        width: 100%;
+      }
+      li {
+        @include mobile {
+          width: 50%;
+          border: 1px solid $white;
+          text-align: center;
+        }
+      }
+      &__item {
+        font-size: $font-size-xl;
+        padding: 0px 32px;
+        color: $white;
+        @include desktop {
+          padding: 0px 20px;
+        }
+        @include mobile {
+          padding: 0px 0px;
+        }
+        &:hover {
+          @include link-hover;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: $primary;
+  padding: 32px 0px;
+  @include mobile {
+    padding: 24px 0px;
+  }
+  .nav {
+    &__menu {
+      &__item {
+        color: $white;
+        font-size: $font-size-base;
+        padding: 5px 24px;
+        @include desktop {
+          padding: 5px 20px;
+        }
+        &:hover {
+          @include link-hover;
+        }
+      }
+      li:first-child a {
+        padding: 5px 24px 5px 0px;
+        @include desktop {
+          padding: 5px 20px 5px 0px;
+        }
+      }
+    }
+
+    &__socialMedia {
+      @include mobile {
+        right: 5%;
+        top: 0px;
+      }
+      &__item {
+        display: block;
+        margin: 0px 16px;
+        height: 48px;
+        width: 48px;
+        @include desktop {
+          margin: 0px 12px;
+          height: 24px;
+          width: 24px;
+        }
+        @include mobile {
+          margin: 0px 8px;
+        }
+      }
+      li:last-child a {
+        margin: 0px 0px 0px 16px;
+        @include desktop {
+          margin: 0px 0px 0px 12px;
+        }
+        @include mobile {
+          margin: 0px 0px 0px 8px;
+        }
+      }
+    }
+  }
+
+  .address {
+    margin-top: 36px;
+    margin-bottom: 24px;
+    @include desktop {
+      margin-top: 18px;
+      margin-bottom: 20px;
+    }
+    @include mobile {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    &__item {
+      color: $white;
+      font-size: $font-size-4xl;
+      @include desktop {
+        font-size: $font-size-xl;
+      }
+      @include mobile {
+        font-size: $font-size-base;
+      }
+
+      &:hover {
+        @include link-hover;
+      }
+    }
+
+    a[href^="mailto"] {
+      &::before {
+        height: 36px;
+        width: 36px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg);
+        @include bg-img-cover;
+        content: " ";
+        display: inline-block;
+        margin-right: 16px;
+        @include desktop {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+        @include mobile {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    a[href^="tel"] {
+      &::before {
+        height: 36px;
+        width: 36px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg);
+        @include bg-img-cover;
+        content: " ";
+        display: inline-block;
+        margin-right: 16px;
+        @include desktop {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+        @include mobile {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 32px;
+    @include desktop {
+      margin-top: 24px;
+    }
+    @include mobile {
+      margin-top: 16px;
+    }
+    small {
+      color: $white;
+      font-size: $font-size-base;
+      font-weight: $font-weight-regular;
+    }
+    .policy {
+      &__item {
+        margin-left: 48px;
+        color: $white;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-regular;
+        @include desktop {
+          margin-left: 24px;
+        }
+        @include mobile {
+          margin-left: 0px;
+          padding-top: 8px;
+        }
+        &:hover {
+          @include link-hover;
+        }
+      }
+    }
+  }
+}

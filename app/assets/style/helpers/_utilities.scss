@@ -1,0 +1,124 @@
+// display
+.d-block {
+  display: block;
+}
+//flex
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+//position
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.start-0 {
+  left: 0;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+// 尺寸
+.flex-md-row {
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.flex-md-wrap {
+  @include desktop {
+    flex-wrap: wrap;
+  }
+}
+
+.align-items-md-start {
+  @include desktop {
+    align-items: flex-start;
+  }
+}
+
+.d-sm-none {
+  @include mobile {
+    display: none;
+  }
+}
+
+.flex-sm-wrap {
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}
+
+.flex-sm-column {
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.justify-content-sm-center {
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.justify-content-sm-start {
+  @include mobile {
+    justify-content: start;
+  }
+}
+
+.position-sm-absolute {
+  @include mobile {
+    position: absolute;
+  }
+}
