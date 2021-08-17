@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>產品 - 太陽眼鏡</title>
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -50,7 +52,7 @@
         </li>
         <li>
           <a
-            class="product__item product__item__sun product__item-active"
+            class="product__item product__item__sun product__item--active"
             href=""
             >SUNGLASSES</a
           >
@@ -65,7 +67,11 @@
       </ul>
     </div>
   </nav>
-  <section class="product__banner">
+  <section
+    class="product__banner"
+    data-aos="fade-down"
+    data-aos-easing="ease-out-cubic"
+  >
     <div class="container d-flex">
       <div class="product__banner__item">
         <img
@@ -82,7 +88,12 @@
     </div>
   </section>
 
-  <section class="product__serial">
+  <section
+    class="product__serial"
+    data-aos="fade-down"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+  >
     <div class="container">
       <h2 class="product__serial__title">Celluloid Combi</h2>
       <h3 class="product__serial__subTitle">賽璐珞鈦金屬混合鏡框</h3>
@@ -293,13 +304,13 @@
       </ul>
 
       <ul class="product__serial__pagination">
-        <li><a href="#">上一頁</a></li>
-        <li><a href="#">1</a></li>
-        <li class="active"><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">下一頁</a></li>
+        <li class="item"><a class="item-number" href="#">上一頁</a></li>
+        <li class="item"><a class="item-number" href="#">1</a></li>
+        <li class="item active"><a class="item-number" href="#">2</a></li>
+        <li class="item"><a class="item-number" href="#">3</a></li>
+        <li class="item"><a class="item-number" href="#">4</a></li>
+        <li class="item"><a class="item-number" href="#">5</a></li>
+        <li class="item"><a class="item-number" href="#">下一頁</a></li>
       </ul>
     </div>
   </section>
@@ -396,6 +407,11 @@
         </div>
       </div>
     </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

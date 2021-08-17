@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>首頁</title>
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -42,7 +44,7 @@
 
     
 <main>
-  <section class="banner">
+  <section class="banner" data-aos="fade-down">
     <div
       class="
         container
@@ -53,7 +55,12 @@
         text-end
       "
     >
-      <div class="banner__box">
+      <div
+        class="banner__box"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <h3 class="banner__box__subTitle">Promise-Desert 2020 早春系列</h3>
         <h2 class="banner__box__title">看得清，才能看得遠</h2>
       </div>
@@ -61,7 +68,7 @@
   </section>
 
   <section class="feature">
-    <div class="container">
+    <div class="container" data-aos="fade-down">
       <h2 class="feature__title title">用專業的心，做專業的事</h2>
       <ul class="feature__list d-flex justify-content-between flex-wrap">
         <li class="feature__item text-center">
@@ -118,7 +125,7 @@
     <div class="container">
       <h2 class="classic__title title">經典系列鏡框</h2>
       <ul class="classic__list">
-        <li>
+        <li data-aos="fade-down">
           <a
             class="
               classic__item
@@ -137,7 +144,7 @@
             </h3>
           </a>
         </li>
-        <li>
+        <li data-aos="fade-down">
           <a
             class="
               classic__item
@@ -158,7 +165,7 @@
             </h3>
           </a>
         </li>
-        <li>
+        <li data-aos="fade-down">
           <a
             class="
               classic__item
@@ -184,7 +191,7 @@
   </section>
 
   <section class="coBranding">
-    <div class="container">
+    <div class="container" data-aos="fade-down">
       <h2 class="coBranding__title title">聯名設計鏡框</h2>
       <ul class="coBranding__list d-flex">
         <li>
@@ -230,9 +237,18 @@
   <section class="recommend">
     <div class="container">
       <h2 class="recommend__title title">顧客推薦</h2>
-      <ul class="recommend__list d-flex justify-content-between flex-md-wrap">
-        <li class="recommend__card">
+      <ul
+        class="
+          recommend__list
+          d-flex
+          justify-content-between
+          flex-md-wrap
+          justify-content-sm-center
+        "
+      >
+        <li class="recommend__card" data-aos="fade-down">
           <img
+            class="recommend__card__img"
             src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-1.png?raw=true"
             alt="customer"
           />
@@ -253,8 +269,9 @@
             <time class="recommend__card__footer">2021/04/18</time>
           </div>
         </li>
-        <li class="recommend__card">
+        <li class="recommend__card" data-aos="fade-down">
           <img
+            class="recommend__card__img"
             src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-2.png?raw=true"
             alt="customer"
           />
@@ -275,8 +292,9 @@
             <time class="recommend__card__footer">2021/04/18</time>
           </div>
         </li>
-        <li class="recommend__card">
+        <li class="recommend__card" data-aos="fade-down">
           <img
+            class="recommend__card__img"
             src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-3.png?raw=true"
             alt="customer"
           />
@@ -297,8 +315,9 @@
             <time class="recommend__card__footer">2021/04/18</time>
           </div>
         </li>
-        <li class="recommend__card">
+        <li class="recommend__card" data-aos="fade-down">
           <img
+            class="recommend__card__img"
             src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-4.png?raw=true"
             alt="customer"
           />
@@ -482,6 +501,11 @@
         </div>
       </div>
     </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
