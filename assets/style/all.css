@@ -666,6 +666,11 @@ main .coBranding {
     background: #fff;
     overflow: hidden;
     margin: 0px 15px; }
+    main .coBranding__item:hover {
+      -webkit-transform: translateY(-10px);
+          -ms-transform: translateY(-10px);
+              transform: translateY(-10px);
+      translate: 0.5s; }
     @media (max-width: 767px) {
       main .coBranding__item {
         margin: 0px 0px 16px; } }
@@ -708,6 +713,11 @@ main .recommend__card {
     main .recommend__card {
       width: 92%;
       margin: 0px 0px 16px; } }
+  main .recommend__card:hover {
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    translate: 0.5s; }
   main .recommend__card__img {
     width: 100%;
     -o-object-fit: cover;
@@ -942,11 +952,10 @@ main .contact {
       display: block;
       text-decoration: none; }
       .product__serial__item a:hover {
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.05);
-                box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.05); }
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+        translate: 0.5s; }
     .product__serial__item img {
       width: 100%;
       height: 164px;
@@ -1189,6 +1198,11 @@ main .contact {
   width: 33.33%;
   padding-right: 30px;
   margin-bottom: 32px; }
+  .card__item:hover {
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    translate: 0.5s; }
   @media (max-width: 998px) {
     .card__item {
       width: 50%;
@@ -1302,7 +1316,8 @@ main .contact {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    background: #333333; }
+    background: #aa0601;
+    border: 0px; }
   @media (max-width: 998px) {
     .card__footer {
       font-size: 14px;
@@ -1576,6 +1591,8 @@ main .contact {
         font-size: 16px;
         line-height: 21px;
         padding-right: 16px; } }
+    .blogContent__tagBox__item:hover {
+      color: #650300; }
 
 .blogContent__branch {
   margin-top: 16px; }
@@ -1597,8 +1614,10 @@ main .contact {
     @media (max-width: 767px) {
       .blogContent__branch__item {
         line-height: 21px; } }
-    .blogContent__branch__item-active {
+    .blogContent__branch__item--active {
       color: #aa0601; }
+      .blogContent__branch__item--active:hover {
+        color: #650300; }
 
 .blogContent__tag li {
   display: inline; }
@@ -1609,6 +1628,8 @@ main .contact {
   font-size: 24px;
   line-height: 36px;
   font-weight: bold; }
+  .blogContent__tag__item:hover {
+    color: #650300; }
   @media (max-width: 998px) {
     .blogContent__tag__item {
       font-size: 16px; } }
@@ -1711,6 +1732,8 @@ main .contact {
     @media (max-width: 767px) {
       .blogContent__changePage__item {
         width: 100%; } }
+    .blogContent__changePage__item:hover {
+      color: #650300; }
     .blogContent__changePage__item-back::before {
       width: 24px;
       height: 24px;
@@ -1806,6 +1829,11 @@ main .contact {
 
 .faq__item {
   margin-bottom: 32px; }
+  .faq__item:hover {
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    translate: 0.5s; }
   .faq__item__question {
     font-size: 20px;
     line-height: 23px;
