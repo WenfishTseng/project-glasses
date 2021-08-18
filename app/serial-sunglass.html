@@ -14,7 +14,7 @@ current: sunglasses
         </li>
         <li>
           <a
-            class="product__item product__item__sun product__item-active"
+            class="product__item product__item__sun product__item--active"
             href=""
             >SUNGLASSES</a
           >
@@ -29,7 +29,11 @@ current: sunglasses
       </ul>
     </div>
   </nav>
-  <section class="product__banner">
+  <section
+    class="product__banner"
+    data-aos="fade-down"
+    data-aos-easing="ease-out-cubic"
+  >
     <div class="container d-flex">
       <div class="product__banner__item">
         <img
@@ -46,7 +50,12 @@ current: sunglasses
     </div>
   </section>
 
-  <section class="product__serial">
+  <section
+    class="product__serial"
+    data-aos="fade-down"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+  >
     <div class="container">
       <h2 class="product__serial__title">Celluloid Combi</h2>
       <h3 class="product__serial__subTitle">賽璐珞鈦金屬混合鏡框</h3>
@@ -257,13 +266,13 @@ current: sunglasses
       </ul>
 
       <ul class="product__serial__pagination">
-        <li><a href="#">上一頁</a></li>
-        <li><a href="#">1</a></li>
-        <li class="active"><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">下一頁</a></li>
+        <li class="item"><a class="item-number" href="#">上一頁</a></li>
+        <li class="item"><a class="item-number" href="#">1</a></li>
+        <li class="item active"><a class="item-number" href="#">2</a></li>
+        <li class="item"><a class="item-number" href="#">3</a></li>
+        <li class="item"><a class="item-number" href="#">4</a></li>
+        <li class="item"><a class="item-number" href="#">5</a></li>
+        <li class="item"><a class="item-number" href="#">下一頁</a></li>
       </ul>
     </div>
   </section>

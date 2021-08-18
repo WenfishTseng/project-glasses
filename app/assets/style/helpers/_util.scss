@@ -1,0 +1,18 @@
+.title {
+  font-size: $font-size-5xl;
+  font-weight: $font-weight-bold;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    font-size: $font-size-3xl;
+  }
+  @include mobile {
+    font-size: $font-size-2xl;
+    line-height: $line-height-lg;
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+}

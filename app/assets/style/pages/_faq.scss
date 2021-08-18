@@ -41,6 +41,9 @@
   }
   &__item {
     margin-bottom: 32px;
+    &:hover {
+      @include card-hover;
+    }
     &__question {
       font-size: 20px;
       line-height: 23px;

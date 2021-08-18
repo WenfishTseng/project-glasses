@@ -18,7 +18,10 @@
   &__selection {
     display: flex;
     align-items: baseline;
-    span {
+    @include phone {
+      display: block;
+    }
+    &__area {
       font-size: 24px;
       line-height: 30px;
       @include desktop {
@@ -28,13 +31,13 @@
         font-size: 14px;
       }
     }
-    select {
+    &__select {
       width: 324px;
-      height: 45px;
+      // height: 45px;
       font-size: 18px;
       line-height: 26px;
       color: #495057;
-      padding: 8px 0px 11px 19px;
+      padding: 8px 20px 11px;
       margin-left: 20px;
       margin-bottom: 32px;
       @include desktop {
@@ -42,9 +45,78 @@
       }
       @include mobile {
         width: 277px;
+        margin-left: 8px;
+      }
+      @include phone {
+        margin-left: px;
       }
     }
   }
+
+  &__more {
+    display: flex;
+    @include desktop {
+      flex-wrap: wrap;
+    }
+    &__info {
+      width: 43%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+      margin-bottom: 100px;
+      @include desktop {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 32px;
+      }
+      @include mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
+    }
+    &__img {
+      width: 100%;
+      height: 224px;
+      object-fit: cover;
+      @include desktop {
+        height: 164px;
+        width: 50%;
+        margin-right: 30px;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &__map {
+      width: 56%;
+      margin-bottom: 160px;
+      @include desktop {
+        width: 100%;
+        margin-bottom: 96px;
+      }
+      @include mobile {
+        margin-bottom: 56px;
+      }
+    }
+
+    &__iframe {
+      width: 100%;
+      height: 422px;
+      @include mobile {
+        height: 211px;
+      }
+    }
+  }
+}
+
+.card {
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +133,9 @@
     width: 33.33%;
     padding-right: 30px;
     margin-bottom: 32px;
+    &:hover {
+      @include card-hover;
+    }
     @include desktop {
       width: 50%;
       padding-right: 15px;
@@ -82,7 +157,7 @@
       object-fit: cover;
     }
   }
-  .card__title {
+  &__title {
     font-size: 24px;
     line-height: 36px;
     padding: 12px 24px;
@@ -93,7 +168,7 @@
       padding: 8px 24px;
     }
   }
-  .card__body {
+  &__body {
     border: 1px solid #00000020;
     font-size: 20px;
     line-height: 30px;
@@ -171,7 +246,7 @@
       }
     }
   }
-  .card__footer {
+  &__footer {
     width: 100%;
     font-size: 19px;
     line-height: 27px;
@@ -184,73 +259,12 @@
     }
     &:hover {
       transition: all 0.5s;
-      background: darken($color: rgb(51, 51, 51), $amount: 0);
+      background: darken($color: $primary, $amount: 0);
+      border: 0px;
     }
     @include desktop {
       font-size: 14px;
       line-height: 21px;
-    }
-  }
-
-  &__more {
-    display: flex;
-    @include desktop {
-      flex-wrap: wrap;
-    }
-    &__info {
-      width: 43%;
-      display: flex;
-      flex-direction: column;
-      margin-right: 30px;
-      margin-bottom: 100px;
-      @include desktop {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        margin-bottom: 32px;
-      }
-      @include mobile {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 0px;
-        margin-bottom: 16px;
-      }
-    }
-    &__img {
-      width: 100%;
-      height: 224px;
-      object-fit: cover;
-      @include desktop {
-        height: 164px;
-        width: 50%;
-        margin-right: 30px;
-      }
-      @include mobile {
-        width: 100%;
-      }
-    }
-
-    &__map {
-      width: 56%;
-      margin-bottom: 160px;
-      @include desktop {
-        width: 100%;
-        margin-bottom: 96px;
-      }
-      @include mobile {
-        margin-bottom: 56px;
-      }
-    }
-
-    &__iframe {
-      width: 100%;
-      height: 422px;
-      @include mobile {
-        height: 211px;
-      }
     }
   }
 }

@@ -188,6 +188,9 @@ main {
       background: #fff;
       overflow: hidden;
       margin: 0px 15px;
+      &:hover {
+        @include card-hover;
+      }
       @include mobile {
         margin: 0px 0px 16px;
       }
@@ -235,6 +238,13 @@ main {
       @include mobile {
         width: 92%;
         margin: 0px 0px 16px;
+      }
+      &:hover {
+        @include card-hover;
+      }
+      &__img {
+        width: 100%;
+        object-fit: cover;
       }
 
       &__body {

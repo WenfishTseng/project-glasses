@@ -24,6 +24,12 @@
   }
 }
 
+@mixin phone() {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+
 @mixin hide-text {
   text-indent: 101%;
   white-space: nowrap;
@@ -32,7 +38,7 @@
 
 @mixin link-hover {
   transition: all 0.5s;
-  color: darken($color: $light, $amount: 0);
+  color: darken($color: $hover, $amount: 0);
 }
 
 @mixin bg-img-cover {
@@ -45,4 +51,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@mixin card-hover {
+  transform: translateY(-10px);
+  translate: 0.5s;
 }

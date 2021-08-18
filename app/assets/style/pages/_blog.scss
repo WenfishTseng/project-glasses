@@ -67,7 +67,7 @@
     }
     &__img {
       width: 58.3%;
-      height: auto;
+      // height: auto;
       object-fit: cover;
       margin-right: 30px;
       @include desktop {
@@ -77,7 +77,7 @@
         width: 100%;
       }
     }
-    .card {
+    .cardBlog {
       &__title {
         color: $primary;
         font-size: 32px;
@@ -134,6 +134,7 @@
         display: block;
         text-align: right;
         font-weight: 900;
+        background-color: transparent;
         &:hover {
           transition: all 0.5s;
           color: darken($color: $primary, $amount: 0);
@@ -266,6 +267,9 @@
         line-height: 21px;
         padding-right: 16px;
       }
+      &:hover {
+        color: $secondary;
+      }
     }
   }
 
@@ -289,8 +293,11 @@
       @include mobile {
         line-height: 21px;
       }
-      &-active {
+      &--active {
         color: $primary;
+        &:hover {
+          color: $secondary;
+        }
       }
     }
   }
@@ -305,6 +312,9 @@
       font-size: 24px;
       line-height: 36px;
       font-weight: bold;
+      &:hover {
+        color: $secondary;
+      }
       @include desktop {
         font-size: 16px;
       }
@@ -401,6 +411,9 @@
       }
       @include mobile {
         width: 100%;
+      }
+      &:hover {
+        color: $secondary;
       }
 
       &-back {
